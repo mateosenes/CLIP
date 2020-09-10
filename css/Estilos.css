@@ -55,13 +55,9 @@ li a,
   padding: 14px 16px;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover:not(.active) {
+/* Change the link color to #505050 (dark-grey) on hover */
+nav ul li a:hover {
   background-color: #505050;
-}
-
-.active {
-  background-color: orangered;
 }
 
 li.dropdown {
@@ -102,35 +98,32 @@ li.dropdown {
   float: left;
 }
 
-.table {
-  width: 940px;
+table {
+  width: 950px;
   height: 260px;
+  margin: auto;
   margin-top: 30px;
-  float: left;
+  border-collapse: separate;
+  border-spacing: 30px 15px;
   background: black;
   border-radius: 5px;
-  padding: 10px;
-}
-
-table {
-  margin: auto;
 }
 
 table td {
-  border: 1px solid white;
   background: rgb(156, 39, 0);
   background: linear-gradient(
     0deg,
     rgba(156, 39, 0, 1) 0%,
     rgba(255, 64, 0, 1) 100%
-  )
+  );
+  border-radius: 5px;
 }
 
 table td:hover {
   background: orangered;
 }
 
-.thum{
+.thum {
   width: 150px;
   height: 115px;
 }
@@ -226,4 +219,27 @@ footer {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/* DOG and CAT HTML */
+.photo {
+  clear: both;
+  float: left;
+  margin: 20px 0px 0px 70px;
+}
+
+.pet {
+  height: 600px;
+  width: 800px;
+  border: 5px dotted orangered;
+  border-radius: 5px;
+}
+
+.link {
+  padding: 0px 0px 0px 0px;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: #54456b;
 }
