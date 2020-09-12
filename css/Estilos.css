@@ -1,5 +1,6 @@
 /* Estilos generales */
 body {
+  height: 100%;
   margin: 0;
   background-color: whitesmoke;
   font-family: Arial, Helvetica, sans-serif;
@@ -25,22 +26,13 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgb(185, 96, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(185, 96, 0, 1) 0%,
-    rgba(0, 0, 0, 1) 20%,
-    rgba(0, 0, 0, 1) 50%,
-    rgba(0, 0, 0, 1) 80%,
-    rgba(185, 96, 0, 1) 100%
-  );
+  background: black;
 }
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 li {
@@ -58,6 +50,8 @@ li a,
 /* Change the link color to #505050 (dark-grey) on hover */
 nav ul li a:hover {
   background-color: #505050;
+  color: white;
+  text-decoration: none;
 }
 
 li.dropdown {
@@ -91,6 +85,13 @@ li.dropdown {
   color: white;
 }
 
+/* MODAL */
+.modal-body{
+  width: 100%;
+  height: 370px;
+  margin: auto;
+}
+
 /* MAIN */
 .main {
   width: 100%;
@@ -99,7 +100,7 @@ li.dropdown {
 }
 
 table {
-  width: 950px;
+  width: 100%;
   height: 260px;
   margin: auto;
   margin-top: 30px;
@@ -130,7 +131,7 @@ table td:hover {
 
 /* BIENVENIDOS */
 .bienvenida {
-  width: 920px;
+  width: 100%;
   float: left;
   padding: 20px;
   background: rgb(156, 39, 0);
@@ -157,10 +158,10 @@ table td:hover {
 
 /* CONTENIDO */
 .contenido {
-  width: 680px;
+  width: 700px;
   height: 300px;
   float: left;
-  padding: 0px 10px 0px 10px;
+  padding: 20px 10px 0px 10px;
   background: #4e4e4e;
   border-radius: 5px;
   box-shadow: 0px 2px 2px black;
@@ -172,7 +173,7 @@ table td:hover {
 }
 
 .contenido article h2 {
-  font-size: 22px;
+  font-size: 28px;
   color: white;
 }
 
@@ -185,11 +186,11 @@ table td:hover {
 
 /* SIDEBAR */
 aside {
-  width: 220px;
+  width: 240px;
   height: 300px;
   float: left;
   margin-left: 20px;
-  padding: 0px 10px 0px 10px;
+  padding: 20px 10px 0px 10px;
   background: #4e4e4e;
   border-radius: 5px;
   box-shadow: 0px 2px 2px black;
@@ -208,13 +209,14 @@ aside p {
 /* FOOTER */
 footer {
   clear: both;
-  position: fixed;
+  position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 960px;
   text-align: center;
-  padding: 3px;
+  padding: 10px 0px 0px 0px;
   background-color: black;
   color: white;
+  border-radius: 5px 5px 0px 0px ;
 }
 
 footer a:hover {
@@ -225,7 +227,7 @@ footer a:hover {
 .photo {
   clear: both;
   float: left;
-  margin: 20px 0px 0px 70px;
+  margin: 50px 0px 0px 70px;
 }
 
 .pet {
@@ -242,4 +244,71 @@ footer a:hover {
 .link:hover {
   text-decoration: underline;
   color: #54456b;
+}
+
+.bienvenida2 {
+  width: 100%;
+  float: left;
+  padding: 20px;
+  background: rgb(156, 39, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(156, 39, 0, 1) 0%,
+    rgba(255, 64, 0, 1) 100%
+  );
+  margin: 20px 0px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px black;
+}
+
+article * {
+  color: white;
+}
+
+/* RESPONSIVE */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  header{
+    width: 100%;
+  }
+
+  #subheader{
+    width: 100%;
+  }
+
+  table{
+    width: 100% ;
+  }
+
+  .respo{
+    display: none;
+  }
+
+  nav{
+    width: 100%%;
+  }
+
+  .wrapper{
+    width: 400px;
+  }
+
+  .main{
+    width: 100%;
+  }
+
+  .contenido{
+    width: 100%;
+ }
+
+  aside{
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  footer{
+    width: 400px;
+    bottom: -700px;
+  }
 }
