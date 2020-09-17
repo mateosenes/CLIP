@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- CSS -->
-    <link rel="Stylesheet" href="css/Estilos.css" />
-    <link rel="Stylesheet" href="css/Quiz.css" />
+    <link rel="StyleSheet" href="css/Estilos.css" />
+    <link rel="StyleSheet" href="css/Quiz.css"/>
     <!-- GOOGLE MATERIAL ICONS -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>PATITAS</title>
@@ -32,19 +32,19 @@
                         <a href="cat.html">GATOS</a>
                     </div>
                 </li>
-                <li><a href="" data-toggle="modal" data-target="#modalquiz">Trivia</a></li>
+                <li><a href="#about">Trivia</a></li>
                 <li style="float: right;"><a class="material-icons" style="color:white;" type="button"
-                        data-toggle="modal" data-target="#modal1">contact_mail</a></li>
+                        data-toggle="modal" data-target="#modal1">login</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Modal -->
-    <section class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+    <section class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <section class="modal-header">
-                    <h5 class="modal-title">Contacto</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Contacto</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -72,6 +72,7 @@
                                 class="form-control md-textarea"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary"
+                            style="background: orangered; border: none; float: right;"
                             onclick="document.getElementById('contact-form').submit();">Enviar</button>
                     </form>
                 </section>
@@ -79,72 +80,8 @@
         </div>
     </section>
 
-    <!-- Modal Quiz -->
-    <section class="modal fade" id="modalquiz" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <section class="modal-header">
-                    <h5 class="modal-title">Contacto</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </section>
-                <section class="modal-body-quiz">
-                    <header class="modalheader">
-                        <h3 id="contador"></h3>
-                    </header>
-                    <div>
-                        <p id="pregunta" style="">"¿Qué animal de buen olfato, rebuscador dentro de casa, rincón por
-                            rincón repasa y lame, si pilla, un plato."</p>
-                    </div>
-                    <div>
-                        <p id="notifi"></p>
-                    </div>
-                    <section class="mainmodal">
-                        <a id="help" class="material-icons" type="button" style="display: none; color: black;">help</a>
-                        <input type="text" id="inputquiz" class="" placeholder="escriba el animal aqui....">
-                    </section>
-                </section>
-                <section id="modal-footer">
-                    <button type="button" class="btn btn-primary" id="confirmar"> CONFIRMAR </button>
-                    <button type="button" id="cerrar" class="btn btn-primary" style="display: none;"> CERRAR </button>
-                </section>
-            </div>
-        </div>
-    </section>
-
     <section class="wrapper">
         <section class="main">
-            <table>
-                <tr>
-                    <td><img class="thum" src="imgs/bulldog-puppy.png" alt="Thumbail"></td>
-                    <td><img class="thum" src="imgs/bulldog-puppy.png" alt="Thumbail"></td>
-                    <td class="respo"><img class="thum" src="imgs/bulldog-puppy.png" alt="Thumbail"></td>
-                    <td class="respo"><img class="thum" src="imgs/bulldog-puppy.png" alt="Thumbail"></td>
-                    <td class="respo"><img class="thum" src="imgs/bulldog-puppy.png" alt="Thumbail"></td>
-                </tr>
-                <tr>
-                    <td><img class="thum" src="imgs/ragdoll-cat.png" alt="Thumbail"></td>
-                    <td><img class="thum" src="imgs/ragdoll-cat.png" alt="Thumbail"></td>
-                    <td class="respo"><img class="thum" src="imgs/ragdoll-cat.png" alt="Thumbail"></td>
-                    <td class="respo"><img class="thum" src="imgs/ragdoll-cat.png" alt="Thumbail"></td>
-                    <td class="respo"><img class="thum" src="imgs/ragdoll-cat.png" alt="Thumbail"></td>
-                </tr>
-            </table>
-            <section class="bienvenida">
-                <article>
-                    <hgroup>
-                        <h3>Bienvenidos</h3>
-                    </hgroup>
-                    <p>
-                    <ul>
-                        <li>+ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li><br />
-                        <li>+ Donec tincidunt sem varius arcu tincidunt tempor.</li><br />
-                        <li>+ Praesent sed massa ac dolor luctus egestas.</li><br />
-                    </ul>
-                    </p>
-                </article>
-            </section>
             <section class="contenido">
                 <article>
                     <h2>Titulo</h2>
@@ -156,16 +93,6 @@
                     </p>
                 </article>
             </section>
-            <aside>
-                <h3>Sidebar</h3>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae
-                    consequatur sunt accusantium labore in error eligendi aut. Harum,
-                    expedita voluptate veritatis asperiores deleniti unde consequuntur
-                    explicabo, voluptates molestiae, excepturi eos!
-                </p>
-            </aside>
-
         </section>
         <footer>
             <p>
@@ -184,8 +111,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-
-    <script language="JavaScript" type="text/javascript" src="js/quiz.js"></script>
 
 </body>
 

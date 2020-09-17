@@ -1,230 +1,140 @@
-/* Estilos generales */
-body {
-    margin: 0;
-    background-color: whitesmoke;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  .wrapper {
-    width: 960px;
-    margin: auto;
-    clear: both;
-  }
-  
-  /* HEADER */
-  #subheader {
-    width: 960px;
-    margin: auto;
-  }
-  
-  nav {
-    position: fixed;
-    top: 0;
+/* DOG.HTML */
+.photo {
+  clear: both;
+  float: left;
+  margin: 50px 0px 0px 70px;
+}
+
+.pet {
+  height: 600px;
+  width: 800px;
+  border: 5px dotted orangered;
+  border-radius: 5px;
+}
+
+.link {
+  padding: 0px 0px 0px 0px;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: #54456b;
+}
+
+.bienvenida2 {
+  width: 100%;
+  float: left;
+  padding: 20px;
+  background: rgb(156, 39, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(156, 39, 0, 1) 0%,
+    rgba(255, 64, 0, 1) 100%
+  );
+  margin: 20px 0px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px black;
+}
+
+article * {
+  color: white;
+}
+
+
+/* RESPONSIVE DOG.HTML */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  header{
     width: 100%;
-    background: rgb(185, 96, 0);
-    background: linear-gradient(
-      90deg,
-      rgba(185, 96, 0, 1) 0%,
-      rgba(0, 0, 0, 1) 20%,
-      rgba(0, 0, 0, 1) 50%,
-      rgba(0, 0, 0, 1) 80%,
-      rgba(185, 96, 0, 1) 100%
-    );
   }
-  
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a,
-  .dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover:not(.active) {
-    background-color: #505050;
-  }
-  
-  .active {
-    background-color: orangered;
-  }
-  
-  li.dropdown {
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  /* Show .dropdown-content */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  /* links color inside the dropdown */
-  .dropdown-content a:hover {
-    color: white;
-  }
-  
-  /* MAIN */
-  .main {
+
+  #subheader{
     width: 100%;
-    margin: 40px 0px 0px 0px;
-    float: left;
   }
-  
-  .table {
-    width: 940px;
-    height: 260px;
-    margin-top: 30px;
-    float: left;
-    background: black;
-    border-radius: 5px;
-    padding: 10px;
+
+  nav{
+    width: 100%;
   }
-  
-  table {
-    margin: auto;
+
+  .wrapper{
+    width: 400px;
   }
-  
-  table td {
-    border: 1px solid white;
-    background: rgb(156, 39, 0);
-    background: linear-gradient(
-      0deg,
-      rgba(156, 39, 0, 1) 0%,
-      rgba(255, 64, 0, 1) 100%
-    )
+
+  .main{
+    width: 100%;
   }
-  
-  table td:hover {
-    background: orangered;
+
+  .photo {
+    margin: 50px 0px 0px 0px;
   }
-  
+
+  .pet{
+    width: 100%;
+    height: 320px;
+  }
+
+  .contenido{
+    width: 100%;
+ }
+
   .thum{
-    width: 150px;
-    height: 115px;
+    width: 50px;
   }
-  
-  /* BIENVENIDOS */
-  .bienvenida {
-    width: 920px;
-    float: left;
-    padding: 20px;
-    background: rgb(156, 39, 0);
-    background: linear-gradient(
-      0deg,
-      rgba(156, 39, 0, 1) 0%,
-      rgba(255, 64, 0, 1) 100%
-    );
-    margin: 20px 0px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 2px black;
+
+  footer{
+    bottom: 0px;
   }
+
+}
+
+@media only screen and (width: 360px) {
+  .wrapper{
+   width: 360px;
+ }
+
+ .contenido{
+   width: 360px;
+}
   
-  .bienvenida article h3 {
-    color: white;
-    font-size: 40px;
-    margin-bottom: 10px;
-  }
+   footer{
+       width: 100%;
+       bottom: -120px;
+   }
+}
+
+@media only screen and (width: 375px){
   
-  .bienvenida article {
-    color: white;
-    line-height: 27px;
-  }
-  
-  /* CONTENIDO */
-  .contenido {
-    width: 680px;
-    height: 300px;
-    float: left;
-    padding: 0px 10px 0px 10px;
-    background: #4e4e4e;
-    border-radius: 5px;
-    box-shadow: 0px 2px 2px black;
-  }
-  
-  .contenido article {
-    float: left;
-    margin-bottom: 20px;
-  }
-  
-  .contenido article h2 {
-    font-size: 22px;
-    color: white;
-  }
-  
-  .contenido article > p {
-    color: white;
-    font-size: 18px;
-    text-align: justify;
-    line-height: 40px;
-  }
-  
-  /* SIDEBAR */
-  aside {
-    width: 220px;
-    height: 300px;
-    float: left;
-    margin-left: 20px;
-    padding: 0px 10px 0px 10px;
-    background: #4e4e4e;
-    border-radius: 5px;
-    box-shadow: 0px 2px 2px black;
-  }
-  
-  aside h3,
-  p {
-    color: white;
-  }
-  
-  aside p {
-    text-align: justify;
-    line-height: 25px;
-  }
-  
-  /* FOOTER */
-  footer {
-    clear: both;
-    position: fixed;
-    bottom: 0;
+  footer{
     width: 100%;
-    text-align: center;
-    padding: 3px;
-    background-color: black;
-    color: white;
+    bottom: -460px;
+
   }
+
+}
+
+@media only screen and (width: 320px){
   
-  footer a:hover {
-    text-decoration: underline;
+  footer{
+    width: 400px;
+    bottom: -170px;
+
   }
-  
+
+}
+
+@media only screen and (width: 375px){
+
+  footer{
+    width: 400px;
+  }
+}
+
+@media only screen and (width: 280px){
+
+  footer{
+    width: 400px;
+    bottom: -280px;
+
+  }  
+}

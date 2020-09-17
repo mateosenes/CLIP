@@ -1,0 +1,36 @@
+#contador {
+    margin-bottom: 60px;
+    font-size: 100px;
+    text-align: center;
+}
+
+#modalquiz {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.modal-body-quiz{
+    height: 350px;
+}
+
+.mainmodal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal-footer{
+    padding: 30px;
+    margin-left: auto;
+}
+
+#pregunta {
+    background-color: grey; 
+    border-radius: 5px;
+    width: 95%;
+    margin: auto;
+}
+
+#notifi{
+    margin-top: 15px;
+}

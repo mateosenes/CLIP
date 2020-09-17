@@ -1,0 +1,159 @@
+/* Cat.HTML */
+.photo {
+  clear: both;
+  float: left;
+  margin: 50px 0px 0px 70px;
+}
+
+.pet {
+  height: 600px;
+  width: 800px;
+  border: 5px dotted orangered;
+  border-radius: 5px;
+}
+
+.link {
+  padding: 0px 0px 0px 0px;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: #54456b;
+}
+
+.bienvenida2 {
+  width: 100%;
+  float: left;
+  padding: 20px;
+  background: rgb(156, 39, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(156, 39, 0, 1) 0%,
+    rgba(255, 64, 0, 1) 100%
+  );
+  margin: 20px 0px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px black;
+}
+
+article * {
+  color: white;
+}
+
+/* RESPONSIVE Cat.HTML */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    header{
+      width: 100%;
+    }
+  
+    #subheader{
+      width: 100%;
+    }
+  
+    nav{
+      width: 100%;
+    }
+  
+    .wrapper{
+      width: 400px;
+    }
+  
+    .main{
+      width: 100%;
+    }
+  
+    .photo {
+      margin: 50px 0px 0px 0px;
+    }
+  
+    .pet{
+      width: 100%;
+      height: 320px;
+    }
+  
+    .contenido{
+      width: 100%;
+   }
+  
+    .thum{
+      width: 50px;
+    }
+  
+    footer{
+      bottom: 0px;
+    }
+  
+  }
+  
+  @media only screen and (width: 360px) {
+    .wrapper{
+     width: 360px;
+   }
+  
+   .contenido{
+     width: 360px;
+  }
+    
+     footer{
+         width: 100%;
+         bottom: -120px;
+     }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (width: 375px){
+    
+    footer{
+      width: 100%;
+      bottom: -460px;
+  
+    }
+  
+  }
+  
+  @media only screen and (width: 375px) {
+    .wrapper{
+     width: 360px;
+   }
+  
+   .contenido{
+     width: 360px;
+  }
+    
+     footer{
+         width: 96%;
+         bottom: -90px;
+     }
+  }
+  
+  @media only screen and (width: 320px) {
+    .wrapper{
+     width: 360px;
+   }
+  
+   .contenido{
+     width: 360px;
+  }
+    
+     footer{
+         width: 360px;
+         bottom: -190px;
+     }
+  }
+
+  @media only screen and (width: 280px) {
+    .wrapper{
+     width: 360px;
+   }
+  
+   .contenido{
+     width: 360px;
+  }
+    
+     footer{
+         width: 360px;
+         bottom: -187px;
+     }
+  }
